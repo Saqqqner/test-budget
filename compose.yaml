@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  pg11:
+    image: postgres
+    restart: always
+    ports:
+      - "5012:5432"
+    environment:
+      POSTGRES_DB: budget_app_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mamamama
